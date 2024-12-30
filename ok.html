@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>チェックイン仮完了</title>
+</head>
+<body>
+ホテルの職員に以下のコードを提示して本チェックインを行ってください。
+<hr>
+操作時刻
+<body>
+  <span id="text"></span>
+
+  <script type="text/javascript">
+  document.getElementById("text").innerHTML = showTime();
+  
+  function showTime() {
+    var now = new Date();
+    var nowhour = now.getHours();
+    var nowminutes = now.getMinutes();
+    var nowseconds = now.getSeconds();
+  
+    var text = nowhour + "：" + nowminutes + "：" + nowseconds; 
+    
+    return text;
+  }
+  </script>
+  </body>
+  <hr>
+  <img src="code_202412301309381.png" alt="サンプル" width="300" height="300">
+</body>
+
+</html>
